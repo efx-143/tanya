@@ -34,7 +34,7 @@
   <path d="M-20 560 Q 200 520 400 550 T 620 530 L 620 720 L -20 720 Z" fill="#150622" />
   <!-- Couple Silhouette holding hands -->
   <g transform="translate(250, 460)" fill="#0c0414">
-    <!-- Boy (Taniksh) -->
+    <!-- Boy (Tanishk) -->
     <circle cx="35" cy="35" r="12" />
     <path d="M22 50 C22 45, 48 45, 48 50 L46 85 L39 125 L34 125 L36 85 L32 85 L34 125 L29 125 L26 85 Z" />
     <!-- Girl (Anokhee) -->

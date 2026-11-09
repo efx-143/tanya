@@ -1,7 +1,7 @@
 {
   "name": "anokhee-birthday-experience",
   "version": "1.0.0",
-  "description": "A magical 3D celestial birthday website for Anokhee by Taniksh",
+  "description": "A magical 3D celestial birthday website for Anokhee by Tanishk",
   "main": "index.html",
   "scripts": {
     "start": "npx serve -l 3000",
@@ -14,9 +14,9 @@
     "webgl",
     "romantic",
     "anokhee",
-    "taniksh"
+    "tanishk"
   ],
-  "author": "Taniksh",
+  "author": "Tanishk",
   "license": "MIT"
 }
 

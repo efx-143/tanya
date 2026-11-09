@@ -172,7 +172,7 @@ function initCakeInteractions() {
             messageBox.innerHTML = `
               <div class="cake-wish-banner animate-pop">
                 <h3>✨ All Your Wishes Will Come True, Anokhee! ✨</h3>
-                <p>"May your year be as radiant, sweet, and unforgettable as you are to me." — Taniksh</p>
+                <p>"May your year be as radiant, sweet, and unforgettable as you are to me." — Tanishk</p>
               </div>
             `;
           }
@@ -205,7 +205,7 @@ function initCakeInteractions() {
       showCustomModal(
         "🍰 A Sweet Slice for Anokhee",
         `Here is the first and sweetest slice of birthday cake just for you! 
-        Taniksh promises to always keep your life filled with sweetness, warmth, and unlimited food dates. ❤️`
+        Tanishk promises to always keep your life filled with sweetness, warmth, and unlimited food dates. ❤️`
       );
     });
   }
@@ -313,28 +313,32 @@ function initPolaroidGallery(config) {
     const card = document.createElement('div');
     card.className = 'polaroid-card-wrapper';
     card.innerHTML = `
-      <div class="polaroid-card">
+      <div class="polaroid-card ${mem.isFirstPicture ? 'first-pic-card' : ''}">
         <div class="polaroid-inner">
           <!-- Front Face -->
           <div class="polaroid-front">
+            ${mem.isFirstPicture ? '<div class="polaroid-ribbon">⭐ Day 1 • First Pic</div>' : ''}
             <div class="tape-strip"></div>
             <div class="polaroid-photo-frame">
-              <img src="${mem.image}" alt="${mem.title}" class="polaroid-img" />
+              <img src="${mem.image}" alt="${mem.title}" class="polaroid-img" loading="lazy" />
+              <button class="polaroid-zoom-btn" title="View Full Photo" onclick="event.stopPropagation(); openPhotoLightbox('${mem.image}', '${mem.title}')">
+                🔍 Full Photo
+              </button>
               <div class="photo-glare"></div>
             </div>
             <div class="polaroid-caption">
               <h4>${mem.title}</h4>
               <p class="polaroid-date">${mem.date} • ${mem.tag}</p>
             </div>
-            <span class="tap-hint">Tap to flip ↺</span>
+            <span class="tap-hint">Tap card to read note ↺</span>
           </div>
           <!-- Back Face -->
           <div class="polaroid-back">
             <div class="polaroid-back-content">
               <span class="polaroid-back-heart">💌</span>
-              <h4>Note from Taniksh</h4>
+              <h4>Note from Tanishk</h4>
               <p class="polaroid-note-text">"${mem.caption}"</p>
-              <div class="polaroid-back-signature">— Taniksh ❤️</div>
+              <div class="polaroid-back-signature">— Tanishk ❤️</div>
             </div>
           </div>
         </div>
@@ -347,10 +351,10 @@ function initPolaroidGallery(config) {
       const rect = card.getBoundingClientRect();
       const x = e.clientX - rect.left - rect.width / 2;
       const y = e.clientY - rect.top - rect.height / 2;
-      const tiltX = (y / (rect.height / 2)) * -12;
-      const tiltY = (x / (rect.width / 2)) * 12;
+      const tiltX = (y / (rect.height / 2)) * -10;
+      const tiltY = (x / (rect.width / 2)) * 10;
       if (!cardEl.classList.contains('flipped')) {
-        cardEl.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.04, 1.04, 1.04)`;
+        cardEl.style.transform = `perspective(1000px) rotateX(${tiltX}deg) rotateY(${tiltY}deg) scale3d(1.03, 1.03, 1.03)`;
       }
     });
 
@@ -442,7 +446,7 @@ function initLoveQuiz(config) {
       quizBox.innerHTML = `
         <div class="glass-card quiz-complete animate-pop">
           <h3>🎉 Score: 1,000,000% Perfect Match! 🎉</h3>
-          <p>You passed the Taniksh & Anokhee Quiz with flying colors! Your official certification has been unlocked below.</p>
+          <p>You passed the Tanishk & Anokhee Quiz with flying colors! Your official certification has been unlocked below.</p>
         </div>
       `;
       if (certSection) {
@@ -529,13 +533,13 @@ function initSkyLanternWish() {
       }
 
       inputEl.value = '';
-      showCustomModal("✨ Your Wish Has Been Released!", `Your wish has been launched into the night sky alongside the stars. Taniksh promises to do everything in his power to make all your dreams come true! ❤️`);
+      showCustomModal("✨ Your Wish Has Been Released!", `Your wish has been launched into the night sky alongside the stars. Tanishk promises to do everything in his power to make all your dreams come true! ❤️`);
     });
   }
 }
 
 // -------------------------------------------------------------
-// CATCH TANIKSH'S FALLING HEARTS MINI-GAME
+// CATCH TANISHK'S FALLING HEARTS MINI-GAME
 // -------------------------------------------------------------
 function initFallingHeartsGame() {
   const container = document.getElementById('falling-hearts-stage');
@@ -546,11 +550,11 @@ function initFallingHeartsGame() {
   let score = 0;
   const compliments = [
     "Cute smile detected! 🥰",
-    "Taniksh's heart skipped a beat! 💓",
+    "Tanishk's heart skipped a beat! 💓",
     "Bonus: 1000 cuddles unlocked! 🤗",
     "Anokhee is the prettiest in the universe! 👑",
     "Unlimited lifetime backrubs coupon unlocked! 💆‍♀️",
-    "Late-night ice cream date on Taniksh! 🍨",
+    "Late-night ice cream date on Tanishk! 🍨",
     "Certified Most Loved Girl on Earth! 💖"
   ];
 
@@ -705,4 +709,42 @@ function showCustomModal(title, message) {
 
   modal.classList.add('active');
 }
+
+// -------------------------------------------------------------
+// PHOTO LIGHTBOX MODAL (FOR VIEWING FULL UNCLIPPED PHOTOS)
+// -------------------------------------------------------------
+window.openPhotoLightbox = function(src, caption) {
+  let modal = document.getElementById('photo-lightbox-modal');
+  if (!modal) {
+    modal = document.createElement('div');
+    modal.id = 'photo-lightbox-modal';
+    modal.className = 'photo-lightbox-backdrop';
+    modal.onclick = window.closePhotoLightbox;
+    modal.innerHTML = `
+      <div class="photo-lightbox-dialog" onclick="event.stopPropagation()">
+        <button class="lightbox-close-btn" onclick="window.closePhotoLightbox()">&times;</button>
+        <img id="lightbox-full-img" src="" alt="Full memory" />
+        <p id="lightbox-caption" class="lightbox-caption"></p>
+      </div>
+    `;
+    document.body.appendChild(modal);
+  }
+
+  const img = document.getElementById('lightbox-full-img');
+  const cap = document.getElementById('lightbox-caption');
+  if (img) img.src = src;
+  if (cap) cap.textContent = caption || '';
+
+  modal.classList.add('active');
+  if (window.romanticAudio) {
+    window.romanticAudio.playSparkleSound();
+  }
+};
+
+window.closePhotoLightbox = function() {
+  const modal = document.getElementById('photo-lightbox-modal');
+  if (modal) {
+    modal.classList.remove('active');
+  }
+};
 

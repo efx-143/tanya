@@ -1,15 +1,15 @@
 /**
  * ===================================================================
- * 💖 ANOKHEE'S BIRTHDAY CONFIGURATION - BY TANIKSH
+ * 💖 ANOKHEE'S BIRTHDAY CONFIGURATION - BY TANISHK
  * ===================================================================
- * Taniksh, you can customize everything in this file!
+ * Tanishk, you can customize everything in this file!
  * Change the text, add your real photos, change dates, or add your inside jokes.
  */
 
 window.BIRTHDAY_CONFIG = {
   // Couple Details
   girlName: "Anokhee",
-  boyName: "Taniksh",
+  boyName: "Tanishk",
   girlNickname: "Meri Jaan / Princess",
 
   // Birthday Date for Midnight Countdown (Format: YYYY-MM-DDTHH:mm:ss)
@@ -26,8 +26,8 @@ window.BIRTHDAY_CONFIG = {
     phonetic: "/əˈnoːkʰiː/",
     type: "noun & cosmic emotion",
     meaning1: "Literally meaning 'Unique', 'Rare', and 'One of a kind' — someone who can never be replicated or replaced.",
-    meaning2: "The girl who walked into Taniksh's world and turned everyday moments into pure magic.",
-    meaning3: "The prettiest smile, the sweetest laugh, and Taniksh's favorite person in this universe.",
+    meaning2: "The girl who walked into Tanishk's world and turned everyday moments into pure magic.",
+    meaning3: "The prettiest smile, the sweetest laugh, and Tanishk's favorite person in this universe.",
     loveQuote: "\"You don't need stars to light up the night, Anokhee. Your smile does that effortlessly.\""
   },
 
@@ -38,7 +38,7 @@ window.BIRTHDAY_CONFIG = {
     { label: "Cutest Girl Rank", value: "#1 in Universe", icon: "👑" },
     { label: "Arguments Won by Her", value: "99.9%", icon: "💅" },
     { label: "Butterflies Caused", value: "Infinite ∞", icon: "🦋" },
-    { label: "Taniksh's Love Level", value: "Max (Overflown)", icon: "🔥" }
+    { label: "Tanishk's Love Level", value: "Max (Overflown)", icon: "🔥" }
   ],
 
   // 3D Cake Customization
@@ -54,7 +54,7 @@ window.BIRTHDAY_CONFIG = {
   reasons: [
     { num: 1, title: "Your Magical Smile", desc: "The way your entire face lights up when you smile — it instantly fixes even my worst days." },
     { num: 2, title: "That Adorable Laugh", desc: "Your laugh is genuinely my favorite melody in the entire world." },
-    { num: 3, title: "The Way You Say My Name", desc: "Nobody in this world pronounces 'Taniksh' the way you do. It sounds like home." },
+    { num: 3, title: "The Way You Say My Name", desc: "Nobody in this world pronounces 'Tanishk' the way you do. It sounds like home." },
     { num: 4, title: "Your Pure Heart", desc: "How deeply and selflessly you care about the people you love. Your kindness is unmatched." },
     { num: 5, title: "Your Cute Mood Swings", desc: "Even when you're dramatically annoyed or making that cute pout, you are the most adorable human." },
     { num: 6, title: "My Safe Haven", desc: "With you, I never have to pretend. I can just be me, and you love me for it." },
@@ -78,60 +78,82 @@ window.BIRTHDAY_CONFIG = {
     { num: 24, title: "Simply Because You Are YOU", desc: "I don't need a thousand reasons to love you. Just one is enough — you are Anokhee." }
   ],
 
-  // Memories & Polaroids (Taniksh can easily replace image paths with their real photos!)
+  // Real Memories & Polaroids of Tanishk & Anokhee
   memories: [
     {
-      title: "The Moment Everything Changed",
-      date: "Chapter 1",
-      image: "assets/images/memory1.svg",
-      caption: "The day our story began. Who knew one person could become my whole universe?",
-      tag: "First Sparks"
+      title: "Our Very First Picture Together",
+      date: "Day 1 • Where Our Story Began",
+      image: "assets/images/first_picture.jpg",
+      caption: "The very first picture we ever took together! Look at us. I still remember the sweet butterflies in my stomach that day. Who knew you would become my whole universe?",
+      tag: "Day One ❤️",
+      isFirstPicture: true
     },
     {
-      title: "Endless Sunset Talks",
-      date: "Chapter 2",
-      image: "assets/images/memory2.svg",
-      caption: "Sitting beside you, watching the sky change colors, wishing time would freeze forever.",
-      tag: "Golden Hours"
+      title: "That Unforgettable Glow",
+      date: "Special Memory #2",
+      image: "assets/images/memory1.jpg",
+      caption: "Every time I look at this picture, I fall in love all over again. That natural glow on your face is brighter than all the stars combined.",
+      tag: "Pure Magic ✨"
     },
     {
-      title: "Late Night Laughs",
-      date: "Chapter 3",
-      image: "assets/images/memory3.svg",
-      caption: "Those 3 AM calls where we laughed so hard our stomachs hurt.",
-      tag: "Midnight Magic"
+      title: "Candid Smiles & Sweet Chaos",
+      date: "Special Memory #3",
+      image: "assets/images/memory2.jpg",
+      caption: "With you, even the simplest moment turns into an unforgettable memory. Your genuine smile is my favorite thing to look at.",
+      tag: "My Favorite Smile 😊"
     },
     {
-      title: "Our Random Road Trips",
-      date: "Chapter 4",
-      image: "assets/images/memory4.svg",
-      caption: "Blasting our favorite songs, singing off-key, with your hand in mine.",
-      tag: "Little Adventures"
+      title: "Lost in the Moment With You",
+      date: "Special Memory #4",
+      image: "assets/images/memory3.jpg",
+      caption: "Just you and me, forgetting the rest of the world. With your hand in mine, I feel like I can conquer anything.",
+      tag: "Forever Vibe 💫"
     },
     {
-      title: "That Unforgettable Smile",
-      date: "Chapter 5",
-      image: "assets/images/memory5.svg",
-      caption: "Caught you in a candid moment looking like an absolute dream.",
-      tag: "Pure Happiness"
+      title: "Effortlessly Beautiful",
+      date: "Special Memory #5",
+      image: "assets/images/memory4.jpg",
+      caption: "Honestly, how do you manage to look so breathtakingly gorgeous every single second? Truly one of a kind.",
+      tag: "Ethereal 👑"
     },
     {
-      title: "Under the Fairy Lights",
-      date: "Chapter 6",
-      image: "assets/images/memory6.svg",
-      caption: "Every place feels like home as long as I am with you.",
-      tag: "Forever Moments"
+      title: "Unfiltered Love & Laughter",
+      date: "Special Memory #6",
+      image: "assets/images/memory5.jpg",
+      caption: "The goofy laughs, the little inside jokes, and the warmth of being completely ourselves. I wouldn't trade this for the world.",
+      tag: "Best Moments 🌸"
+    },
+    {
+      title: "Eyes That Speak To My Soul",
+      date: "Special Memory #7",
+      image: "assets/images/memory6.jpg",
+      caption: "Every time our eyes meet, all I see is home, warmth, and a lifetime of happiness. You are my safe place.",
+      tag: "Deep Connection 💖"
+    },
+    {
+      title: "My Peace in a Loud World",
+      date: "Special Memory #8",
+      image: "assets/images/memory7.jpg",
+      caption: "No matter how chaotic life gets, knowing that I have you by my side brings total calm to my heart.",
+      tag: "My Peace 🕊️"
+    },
+    {
+      title: "To An Eternity With You",
+      date: "Special Memory #9",
+      image: "assets/images/memory8.jpg",
+      caption: "From our first selfie to this moment, and through all the endless chapters yet to come — it will always be you, Anokhee.",
+      tag: "Forever & Always ♾️"
     }
   ],
 
-  // The Heartfelt Love Letter from Taniksh
+  // The Heartfelt Love Letter from Tanishk
   letter: {
     salutation: "My Dearest Anokhee,",
     p1: "Happy Birthday, my love! ❤️ Aaj tumhara din hai, aur sach kahun toh mere paas shabd kam pad jaate hain ye batane ke liye ki tum mere liye kya ho. Jab maine tumhe pehli baar dekha tha, mujhe tabhi lag gaya tha ki tum bohot khaas ho... par aaj main keh sakta hoon ki tum sirf khaas nahi, tum sach me meri zindagi ki sabse 'Anokhee' blessing ho.",
     p2: "Tumhari ek muskurahat mere pure din ki thakaan mita deti hai. Tumhara bina kisi wajah ke hasna, wo choti choti baaton par nakhre dikhana, aur fir achanak se itna pyaar barsana — I swear, I fall in love with you all over again, every single day.",
     p3: "Thank you for being my constant, my peace in this chaotic world, and my absolute favorite human. Chahe hum haste rahein ya kabhi choti moti ladai karein, at the end of the day, my heart will always choose you. Today, I wish for all your dreams to come true, all your wishes to be granted, and your smile to remain this bright forever.",
     closing: "Hamesha tumhara,",
-    signature: "Taniksh ❤️",
+    signature: "Tanishk ❤️",
     ps: "P.S. Tum duniya ki sabse pyari girlfriend ho, and nobody can ever compete with you!"
   },
 
@@ -139,18 +161,18 @@ window.BIRTHDAY_CONFIG = {
   quiz: [
     {
       question: "Who fell in love first?",
-      options: ["Taniksh (Head over heels)", "Taniksh (From day one)", "Taniksh (Without a doubt)"],
+      options: ["Tanishk (Head over heels)", "Tanishk (From day one)", "Tanishk (Without a doubt)"],
       correct: 0,
-      response: "Haha! You know it — Taniksh was completely smitten from the very first second! 🥰"
+      response: "Haha! You know it — Tanishk was completely smitten from the very first second! 🥰"
     },
     {
       question: "Who is the absolute boss in this relationship?",
-      options: ["Taniksh (In his dreams)", "Anokhee (Always & Forever)", "Obviously Madam Anokhee"],
+      options: ["Tanishk (In his dreams)", "Anokhee (Always & Forever)", "Obviously Madam Anokhee"],
       correct: 1,
       response: "100% correct! Madam Anokhee's orders are the law here! 👑✨"
     },
     {
-      question: "How long will Taniksh stay by your side?",
+      question: "How long will Tanishk stay by your side?",
       options: ["Today & Tomorrow", "Until old and wrinkly", "Until the last star in the galaxy shines"],
       correct: 2,
       response: "Until the universe runs out of stars. Always you, Anokhee. 🌌❤️"
