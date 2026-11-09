@@ -1,0 +1,54 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="sky1" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1a0933" />
+      <stop offset="40%" stop-color="#531e68" />
+      <stop offset="70%" stop-color="#c34a6e" />
+      <stop offset="90%" stop-color="#f98866" />
+      <stop offset="100%" stop-color="#ffc56c" />
+    </linearGradient>
+    <radialGradient id="sun" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#fff9e6" />
+      <stop offset="40%" stop-color="#ffd166" stop-opacity="0.9" />
+      <stop offset="100%" stop-color="#ff6b6b" stop-opacity="0" />
+    </radialGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="8" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="600" height="700" fill="url(#sky1)" />
+  <circle cx="300" cy="440" r="120" fill="url(#sun)" />
+  <!-- Stars -->
+  <circle cx="80" cy="80" r="1.5" fill="#fff" opacity="0.8" />
+  <circle cx="140" cy="120" r="2" fill="#fff" opacity="0.9" />
+  <circle cx="220" cy="70" r="1" fill="#fff" opacity="0.6" />
+  <circle cx="420" cy="90" r="2.5" fill="#fff" opacity="0.95" />
+  <circle cx="510" cy="140" r="1.5" fill="#fff" opacity="0.7" />
+  <circle cx="350" cy="60" r="2" fill="#fff" opacity="0.8" />
+  <!-- Mountains/Dunes -->
+  <path d="M-20 540 Q 150 480 320 520 T 620 500 L 620 720 L -20 720 Z" fill="#2b103c" opacity="0.85" />
+  <path d="M-20 560 Q 200 520 400 550 T 620 530 L 620 720 L -20 720 Z" fill="#150622" />
+  <!-- Couple Silhouette holding hands -->
+  <g transform="translate(250, 460)" fill="#0c0414">
+    <!-- Boy (Taniksh) -->
+    <circle cx="35" cy="35" r="12" />
+    <path d="M22 50 C22 45, 48 45, 48 50 L46 85 L39 125 L34 125 L36 85 L32 85 L34 125 L29 125 L26 85 Z" />
+    <!-- Girl (Anokhee) -->
+    <circle cx="65" cy="38" r="11" />
+    <path d="M54 52 C54 48, 76 48, 76 52 L78 85 L84 125 L79 125 L73 88 L69 88 L64 125 L59 125 L62 85 Z" />
+    <!-- Dress flow -->
+    <path d="M55 65 Q 65 95 80 90 Q 65 85 55 65 Z" />
+    <!-- Clasping hands with small heart -->
+    <path d="M44 65 Q 50 72 55 65" stroke="#0c0414" stroke-width="4" fill="none" />
+    <path d="M 49 60 C 49 57 46 55 44 57 C 42 55 39 57 39 60 C 39 64 44 67 44 67 C 44 67 49 64 49 60 Z" fill="#ff477e" filter="url(#glow)" />
+  </g>
+  <!-- Foreground warm sparkles -->
+  <circle cx="240" cy="580" r="2" fill="#ffd166" opacity="0.8" />
+  <circle cx="360" cy="590" r="3" fill="#ffd166" opacity="0.9" />
+  <circle cx="180" cy="620" r="2" fill="#ff8fa3" opacity="0.7" />
+  <circle cx="450" cy="610" r="2.5" fill="#ff8fa3" opacity="0.8" />
+</svg>

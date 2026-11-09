@@ -1,0 +1,412 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, viewport-fit=cover" />
+  <meta name="theme-color" content="#060511" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <title>Happy Birthday Anokhee ✨ | With Love, Taniksh</title>
+  
+  <!-- Favicon / Meta -->
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>💖</text></svg>">
+  <meta name="description" content="A magical 3D celestial birthday experience created especially for Anokhee by Taniksh." />
+  
+  <!-- Stylesheets -->
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- BACKGROUND 3D CANVAS (Constellation Galaxy & Pulsing Heart) -->
+  <div id="bg-canvas-container"></div>
+
+  <!-- ========================================================= -->
+  <!-- 1. MIDNIGHT LOCK SCREEN OVERLAY                          -->
+  <!-- ========================================================= -->
+  <div id="midnight-lock-overlay">
+    <div class="lock-content">
+      <span class="lock-badge">Special Midnight Delivery</span>
+      <h1 class="lock-title">
+        A Gift For <span class="gradient-text" data-bind="girlName">Anokhee</span>
+      </h1>
+      <p class="lock-subtitle">
+        Curated with love by <strong data-bind="boyName">Taniksh</strong> for the most special girl in the universe.
+      </p>
+
+      <div class="countdown-grid">
+        <div class="cd-box">
+          <span id="cd-days" class="cd-num">00</span>
+          <span class="cd-label">Days</span>
+        </div>
+        <div class="cd-box">
+          <span id="cd-hours" class="cd-num">00</span>
+          <span class="cd-label">Hours</span>
+        </div>
+        <div class="cd-box">
+          <span id="cd-mins" class="cd-num">00</span>
+          <span class="cd-label">Minutes</span>
+        </div>
+        <div class="cd-box">
+          <span id="cd-secs" class="cd-num">00</span>
+          <span class="cd-label">Seconds</span>
+        </div>
+      </div>
+
+      <button id="unlock-magic-btn" class="primary-glow-btn unlock-btn-pulse">
+        <span>✨ Unlock Anokhee's Birthday Magic</span>
+      </button>
+    </div>
+  </div>
+
+  <!-- ========================================================= -->
+  <!-- 2. FLOATING PERSISTENT NAV & MUSIC BAR                   -->
+  <!-- ========================================================= -->
+  <header class="top-nav-bar">
+    <div class="brand-badge">
+      <span class="brand-heart">❤️</span>
+      <span><strong data-bind="boyName">Taniksh</strong> &amp; <strong data-bind="girlName">Anokhee</strong></span>
+    </div>
+
+    <nav class="nav-links">
+      <a href="#cake-section">🎂 3D Cake</a>
+      <a href="#reasons-section">✨ Reasons</a>
+      <a href="#memories-section">📸 Memories</a>
+      <a href="#letter-section">💌 Love Letter</a>
+      <a href="#wishes-section">🏮 Wishing Sky</a>
+    </nav>
+
+    <button id="music-toggle-btn" class="music-toggle-btn">
+      <span class="music-icon">🎵</span>
+      <span class="music-label">Music: Off</span>
+    </button>
+  </header>
+
+  <!-- ========================================================= -->
+  <!-- 3. MAIN APPLICATION CONTAINER                            -->
+  <!-- ========================================================= -->
+  <main class="app-container">
+
+    <!-- HERO SECTION -->
+    <section class="hero-section">
+      <div class="hero-tag">
+        <span>✨ Celestial Celebration • Midnight Edition</span>
+      </div>
+      
+      <h1 class="hero-title">
+        Happy Birthday, <span class="gradient-text" data-bind="girlName">Anokhee</span>!
+      </h1>
+      
+      <p id="hero-subtitle" class="hero-subtitle">
+        In a universe of 8 billion stars, you are the only one that makes my world shine.
+      </p>
+
+      <div class="hero-cta-group">
+        <a href="#cake-section" class="primary-glow-btn">
+          <span>🎂 Make a Wish &amp; Cut Cake</span>
+        </a>
+        <a href="#letter-section" class="gold-glow-btn">
+          <span>💌 Read Taniksh's Letter</span>
+        </a>
+        <a href="#memories-section" class="secondary-glass-btn">
+          <span>📸 Our Journey</span>
+        </a>
+      </div>
+    </section>
+
+    <!-- SECTION 1: THE MEANING OF ANOKHEE & TELEMETRY -->
+    <section class="section-wrapper" id="definition-section">
+      <div class="section-header">
+        <span class="section-tag">Dictionary of My Heart</span>
+        <h2 class="section-title">What Does <span class="gold-text">Anokhee</span> Mean?</h2>
+        <p class="section-subtitle">According to the official vocabulary of Taniksh</p>
+      </div>
+
+      <div class="definition-grid">
+        <!-- Dictionary Card -->
+        <div class="glass-card dictionary-card">
+          <div class="dict-header">
+            <h3 id="def-word" class="dict-word">A·nok·hee</h3>
+            <div class="dict-meta">
+              <span id="def-phonetic">/əˈnoːkʰiː/</span>
+              <span>•</span>
+              <span id="def-type">noun &amp; cosmic emotion</span>
+            </div>
+          </div>
+
+          <div class="dict-meanings">
+            <div class="meaning-item">
+              <span class="meaning-num">1.</span>
+              <p id="def-meaning1">Literally meaning 'Unique', 'Rare', and 'One of a kind' — someone who can never be replicated or replaced.</p>
+            </div>
+            <div class="meaning-item">
+              <span class="meaning-num">2.</span>
+              <p id="def-meaning2">The girl who walked into Taniksh's world and turned everyday moments into pure magic.</p>
+            </div>
+            <div class="meaning-item">
+              <span class="meaning-num">3.</span>
+              <p id="def-meaning3">The prettiest smile, the sweetest laugh, and Taniksh's favorite person in this universe.</p>
+            </div>
+          </div>
+
+          <div id="def-quote" class="dict-quote">
+            "You don't need stars to light up the night, Anokhee. Your smile does that effortlessly."
+          </div>
+        </div>
+
+        <!-- Relationship Telemetry Stats -->
+        <div class="stats-grid" id="stats-grid">
+          <!-- Populated dynamically via config.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 2: 3D INTERACTIVE BIRTHDAY CAKE -->
+    <section class="section-wrapper" id="cake-section">
+      <div class="section-header">
+        <span class="section-tag">Interactive 3D Experience</span>
+        <h2 class="section-title">Anokhee's <span class="gradient-text">Birthday Cake</span></h2>
+        <p class="section-subtitle">Drag to rotate in 3D 🔄 • Make a wish and blow out the candles!</p>
+      </div>
+
+      <div class="cake-arena-container">
+        <div class="cake-stage-box">
+          <span class="cake-drag-hint">🖱️ Drag to rotate 360° | Scroll to Zoom</span>
+          <div id="cake-3d-canvas-container"></div>
+          
+          <div class="cake-controls-bar">
+            <button id="blow-candles-btn" class="primary-glow-btn">
+              <span>💨 Make a Wish &amp; Blow Candles</span>
+            </button>
+            <button id="relight-candles-btn" class="secondary-glass-btn" style="display: none;">
+              <span>🔥 Relight Candles</span>
+            </button>
+            <button id="cut-cake-btn" class="gold-glow-btn">
+              <span>🍰 Cut a Sweet Slice</span>
+            </button>
+          </div>
+
+          <div id="cake-celebration-message"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 3: 24 REASONS WHY SHE IS ONE IN A BILLION -->
+    <section class="section-wrapper" id="reasons-section">
+      <div class="section-header">
+        <span class="section-tag">24 Reasons Why I Adore You</span>
+        <h2 class="section-title">Why You Are Truly <span class="gold-text">Anokhee</span></h2>
+        <p class="section-subtitle">A deck of truths straight from Taniksh's heart</p>
+      </div>
+
+      <div class="reasons-deck-wrapper">
+        <div id="reasons-card-container">
+          <!-- Populated dynamically via config.js -->
+        </div>
+
+        <div class="deck-navigation-bar">
+          <button id="reason-prev-btn" class="deck-btn">← Previous</button>
+          <span id="reason-counter" class="reason-counter">1 / 24</span>
+          <button id="reason-next-btn" class="deck-btn">Next Reason →</button>
+          <button id="reason-random-btn" class="gold-glow-btn" style="padding: 0.65rem 1.4rem;">
+            <span>🎲 Surprise Reason</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 4: 3D POLAROIDS MEMORY LANE -->
+    <section class="section-wrapper" id="memories-section">
+      <div class="section-header">
+        <span class="section-tag">Our Little Chapters</span>
+        <h2 class="section-title">Memory Lane <span class="gradient-text">With You</span></h2>
+        <p class="section-subtitle">Hover to tilt in 3D • Click any photo to read Taniksh's secret note on the back</p>
+      </div>
+
+      <div class="polaroid-grid" id="polaroid-grid">
+        <!-- Populated dynamically via config.js -->
+      </div>
+    </section>
+
+    <!-- SECTION 5: WAX-SEALED LOVE LETTER -->
+    <section class="section-wrapper" id="letter-section">
+      <div class="section-header">
+        <span class="section-tag">Confidential &amp; From the Heart</span>
+        <h2 class="section-title">A Letter From <span class="gold-text" data-bind="boyName">Taniksh</span></h2>
+        <p class="section-subtitle">Sealed with wax and love • Click the seal to open</p>
+      </div>
+
+      <div class="letter-stage-wrapper">
+        <div class="envelope-3d-box" id="wax-envelope">
+          <div class="envelope-triangle-top"></div>
+          
+          <div class="wax-seal-stamp">
+            <span class="wax-seal-initials">T &amp; A</span>
+            <span class="wax-seal-heart">❤️</span>
+          </div>
+
+          <span class="envelope-open-hint">Tap Wax Seal to Break &amp; Read</span>
+        </div>
+      </div>
+
+      <!-- Letter Modal -->
+      <div id="letter-modal">
+        <div class="parchment-letter">
+          <button id="close-letter-btn" class="letter-close-btn">&times;</button>
+          
+          <h3 id="letter-salutation" class="letter-salutation">My Dearest Anokhee,</h3>
+          
+          <div class="letter-body">
+            <p id="letter-p1"></p>
+            <p id="letter-p2"></p>
+            <p id="letter-p3"></p>
+          </div>
+
+          <div class="letter-sign-block">
+            <p id="letter-closing" class="letter-closing">Hamesha tumhara,</p>
+            <p id="letter-signature" class="letter-signature">Taniksh ❤️</p>
+            <p id="letter-ps" class="letter-ps"></p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 6: 3D SKY LANTERNS WISHING WELL -->
+    <section class="section-wrapper" id="wishes-section">
+      <div class="section-header">
+        <span class="section-tag">The Tangled Wishing Sky</span>
+        <h2 class="section-title">Release Your <span class="gradient-text">Birthday Wish</span></h2>
+        <p class="section-subtitle">Type your secret wish below and watch your 3D glowing lantern float into the stars</p>
+      </div>
+
+      <div class="glass-card lantern-wishing-box">
+        <div class="wish-input-panel">
+          <h3>Make a Wish, Anokhee ✨</h3>
+          <p style="color: var(--text-muted); font-size: 0.95rem;">
+            Whether it's a dream for this year, a place you want to travel with Taniksh, or a little prayer — release it into our personal galaxy.
+          </p>
+
+          <textarea id="wish-input" class="wish-textarea" placeholder="Type your beautiful wish here... (e.g. 'A year full of adventures, happiness, and infinite food with Taniksh!')"></textarea>
+
+          <button id="send-wish-btn" class="gold-glow-btn">
+            <span>🏮 Release Lantern to the Stars</span>
+          </button>
+
+          <div class="recent-wishes-wall" id="recent-wishes-list">
+            <!-- Wishes appear here as pills -->
+          </div>
+        </div>
+
+        <div id="lantern-3d-container"></div>
+      </div>
+    </section>
+
+    <!-- SECTION 7: LOVE QUIZ & OFFICIAL GIRLFRIEND CERTIFICATE -->
+    <section class="section-wrapper" id="quiz-section">
+      <div class="section-header">
+        <span class="section-tag">Playful Challenge</span>
+        <h2 class="section-title">The <span class="gold-text">Taniksh &amp; Anokhee</span> Quiz</h2>
+        <p class="section-subtitle">Answer 3 fun questions to claim your official birthday certificate!</p>
+      </div>
+
+      <div class="quiz-wrapper">
+        <div id="quiz-box"></div>
+      </div>
+
+      <!-- Unlockable Official Certificate -->
+      <div id="certificate-container">
+        <div class="certificate-frame">
+          <span class="cert-badge-gold">Official Royal Declaration</span>
+          <h2 class="cert-title">Certificate of Perfection</h2>
+          <p class="cert-awarded-to">Proudly Awarded To</p>
+          <h1 class="cert-name" data-bind="girlName">Anokhee</h1>
+          
+          <p class="cert-desc">
+            For possessing the most breathtaking smile, the sweetest heart, unparalleled adorableness, 
+            and for officially being certified as the <strong>World's Best &amp; Most Loved Girlfriend</strong>. 
+            By royal decree of Taniksh, this certificate grants lifetime hugs, endless food dates, and eternal devotion.
+          </p>
+
+          <div class="cert-signatures">
+            <div class="cert-sig-line">
+              <span class="cert-sig-name" data-bind="boyName">Taniksh</span>
+              <span class="cert-sig-title">Lifetime Devotee &amp; Boyfriend</span>
+            </div>
+
+            <div class="cert-gold-seal">👑</div>
+
+            <div class="cert-sig-line">
+              <span class="cert-sig-name">Infinite Love</span>
+              <span class="cert-sig-title">Official Seal of Authenticity</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="cert-actions">
+          <button id="print-cert-btn" class="gold-glow-btn">
+            <span>🖨️ Print / Save Certificate</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION 8: CATCH FALLING HEARTS MINI-GAME -->
+    <section class="section-wrapper" id="game-section">
+      <div class="section-header">
+        <span class="section-tag">Playful Love Meter</span>
+        <h2 class="section-title">Catch Taniksh's <span class="gradient-text">Falling Hearts</span></h2>
+        <p class="section-subtitle">Click / tap the floating hearts as they fall to collect love perks!</p>
+      </div>
+
+      <div class="game-stage-card" id="falling-hearts-stage">
+        <div class="game-hud">
+          <div class="game-score-badge">
+            <span>Hearts Caught: </span>
+            <span id="heart-score-count" style="color: var(--accent-gold);">0</span>
+          </div>
+          <div class="game-perk-hint" id="heart-unlocked-perk">
+            Tap hearts to unlock secret perks! ✨
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="app-footer">
+    <p class="footer-quote">
+      "You will always be my today, tomorrow, and forever."
+    </p>
+    <p class="footer-credit">
+      Designed with infinite love by <strong data-bind="boyName">Taniksh</strong> for <strong data-bind="girlName">Anokhee</strong> ✨
+    </p>
+  </footer>
+
+  <!-- ========================================================= -->
+  <!-- SCRIPTS & VENDOR DEPENDENCIES                             -->
+  <!-- ========================================================= -->
+  <!-- 1. Vendor Dependencies (Cached locally for offline speed) -->
+  <script src="assets/vendor/three.min.js"></script>
+  <script src="assets/vendor/OrbitControls.js"></script>
+  <script src="assets/vendor/gsap.min.js"></script>
+  <script src="assets/vendor/confetti.browser.min.js"></script>
+
+  <!-- Fallback to CDNs if local vendor files fail -->
+  <script>
+    if (typeof THREE === 'undefined') {
+      document.write('<script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"><\/script>');
+      document.write('<script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"><\/script>');
+    }
+    if (typeof confetti === 'undefined') {
+      document.write('<script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"><\/script>');
+    }
+  </script>
+
+  <!-- 2. Application Logic -->
+  <script src="config.js"></script>
+  <script src="js/audio.js"></script>
+  <script src="js/three-scene.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
+

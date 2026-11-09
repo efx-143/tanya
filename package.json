@@ -1,0 +1,22 @@
+{
+  "name": "anokhee-birthday-experience",
+  "version": "1.0.0",
+  "description": "A magical 3D celestial birthday website for Anokhee by Taniksh",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve -l 3000",
+    "dev": "python3 -m http.server 3000",
+    "serve": "npx serve -l 3000"
+  },
+  "keywords": [
+    "birthday",
+    "threejs",
+    "webgl",
+    "romantic",
+    "anokhee",
+    "taniksh"
+  ],
+  "author": "Taniksh",
+  "license": "MIT"
+}
+

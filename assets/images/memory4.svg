@@ -1,0 +1,26 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 700" width="100%" height="100%">
+  <defs>
+    <linearGradient id="drive" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#111827" />
+      <stop offset="40%" stop-color="#4c1d95" />
+      <stop offset="80%" stop-color="#be185d" />
+      <stop offset="100%" stop-color="#fbbf24" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="700" fill="url(#drive)" />
+  <!-- Neon Highway -->
+  <polygon points="270,420 330,420 520,700 80,700" fill="#1e1b4b" />
+  <line x1="300" y1="430" x2="300" y2="700" stroke="#fbbf24" stroke-width="4" stroke-dasharray="18 14" />
+  <!-- Retro Sun on horizon -->
+  <circle cx="300" cy="420" r="65" fill="#f59e0b" opacity="0.85" />
+  <!-- Music notes floating -->
+  <g fill="#f472b6" opacity="0.85">
+    <path d="M 160 300 Q 180 270 200 290 L 195 320" stroke="#f472b6" stroke-width="3" fill="none" />
+    <circle cx="195" cy="320" r="6" />
+    <circle cx="165" cy="330" r="6" />
+    <path d="M 400 280 Q 420 250 440 270 L 435 300" stroke="#38bdf8" stroke-width="3" fill="none" />
+    <circle cx="435" cy="300" r="6" fill="#38bdf8" />
+  </g>
+  <text x="300" y="220" font-family="sans-serif" font-size="24" font-weight="bold" fill="#fff" text-anchor="middle" opacity="0.9">OUR FAVORITE PLAYLIST</text>
+  <text x="300" y="250" font-family="sans-serif" font-size="16" fill="#fbcfe8" text-anchor="middle">Taniksh + Anokhee In Sync</text>
+</svg>
